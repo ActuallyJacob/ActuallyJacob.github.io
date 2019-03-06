@@ -8,150 +8,18 @@
 		<noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
 		<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
 		<link rel="icon" href="images/reaper.PNG">
-		<style>
+		<style type="text/css">
 			li {list-style-position: inside;}
+			div#middle{ min-width:300px; }
+			div#middle > div{ float:left; width:300px; }
+			div#middle > div > div{ border:#000 1px solid; padding: 20px; }
+			div#middle > div > div > img{ width:100%; }
+			div#bottom{ clear:left; background:#666; height: 200px; }
 		</style>
 	</head>
-	<body class="is-preload">
+	<body>
+		<div id="middle">
 
-		<!-- Header -->
-			<section id="header">
-				<div class="inner">
-					<span class="image fit"></span><img src= "images/reaper.PNG" alt="" /></span>
-					<h1>Greatings. I'm <strong>The Reaper</strong>, a Discord bot<br />
-					created by <a href="https://github.com/ActuallyJacob"><b>ActuallyJacob</b></a>.</h1>
-					<h3>This website is configured for mobile devices, but is still usable on PC.</h3>
-					<ul class="actions special">
-						<li><a href="#one" class="button scrolly">More</a></li>
-					</ul>
-				</div>
-			</section>
-
-		<!-- Two -->
-
-			<section id="one" class="main style2">
-				<div class="container">
-					<div class="row gtr-150">
-						<div class="col-6 col-12-medium">
-							<ul class="major-icons">
-								<li style="text-align: centre"><span class="icon style1 major fa-code"></span></li>
-							</ul>
-							<h2 style="text-align: centre"><b><u>COMMANDS:</u></b></h2>
-							<h5 style="text-align: left"><u><font size ="4">Setup:</font></u></h5>
-							<ol><font size ="4">
-								<li style="text-align: left">?conf show</li>
-								<li style="text-align: left">?conf set {option} [what-to-set-it-to]</li>
-								<li style="text-align: left">?conf reset {option}</li>
-								<li style="text-align: left">?conf remove {option}</li>
-							</font></ol>
-							<h5 style="text-align: left"><u><font size ="4">Moderation:</font></u></h5>
-							<ul><font size ="4">
-								<li style="text-align: left">?ban</li>
-								<li style="text-align: left">?kick</li>
-								<li style="text-align: left">?list</li>
-								<li style="text-align: left">?role</li>
-								<li style="text-align: left">?roleall</li>
-								<li style="text-align: left">?rollcall</li>
-								<li style="text-align: left">?purge</li>
-								<li style="text-align: left">?mute</li>
-								<li style="text-align: left">?unmute</li>
-								<li style="text-align: left">?warn</li>
-							</font></ul>
-							<h5 style="text-align: left"><u><font size ="4">Miscellanious:</font></u></h5>
-							<ul><font size ="4">
-								<li style="text-align: left">?serverInfo</li>
-								<li style="text-align: left">?info</li>
-							</font></ul>
-							<h5 style="text-align: left"><u><font size ="4">Standard:</font></u></h5>
-							<ul><font size ="4">
-								<li style="text-align: left">?accept</li>
-								<li style="text-align: left">?suggest</li>
-								<li style="text-align: left">?help</li>
-								<li style="text-align: left">?twitch</li>
-								<li style="text-align: left">?mixer</li>
-								<li style="text-align: left">?hug</li>
-								<li style="text-align: left">?roast</li>
-								<li style="text-align: left">?event (Disabled)</li>
-								<li style="text-align: left">meme commands (use ?help for list of meme commands)</li>
-							</font></ul>
-							<h5 style="text-align: left"<u><font size ="4">Streaming:</font></u></h5>
-							<ul><font size ="4">
-								<li style="text-align: left">?addMixer</li>
-								<li style="text-align: left">?addTwitch (Disabled)</li>
-								<li style="text-align: left">?delMixer</li>
-								<li style="text-align: left">?delTwitch (Disabled)</li>
-								<li style="text-align: left">?streamers</li>
-							</font></ul>
-						</div>
-					</div>
-			</section>
-
-			<section id="two" class="main style2">
-					<div class="container">
-						<div class="row gtr-150">
-							<div class="col-6 col-12-medium">
-								<ul class="major-icons">
-									<li style="text-align: centre"><span class="icon style1 major fa-calendar"></span></li>
-								</ul>
-								<h2 style="text-align: centre"><b><u>TO-DO & UPDATES:</u></b></h2>
-								<h5 style="text-align: left"><u><font size ="4">To-Do:</font></u></h5>
-								<ul><font size ="4">
-									<li style="text-align: left">Create a levels system</li>
-									<li style="text-align: left">Create a currency system</li>
-									<li style="text-align: left">Create "fun commands ✅</li>
-									<li style="text-align: left">Create "event command ✅ (still in development)</li>
-									<li style="text-align: left">Update full code and tidy it ✅</li>
-								</font></ul>
-								<h5 style="text-align: left"><u><font size ="4">Updates:</font></u></h5>
-								<ul><font size ="4">
-									<li style="text-align: left">Created permanent database using MongoDB</li>
-									<li style="text-align: left">Can now add Mixer and twitch streamers to DB</li>
-									<li style="text-align: left">Recognises when a Twitch streamer goes live</li>
-									<li style="text-align: left">Recognises when a Mixer streamer goes live</li>
-									<li style="text-align: left">Announces when na Twitch streamer goes live</li>
-									<li style="text-align: left">Announces when a Mixer streamer goes live</li>
-								</font></ul>
-							</div>
-						</div>
-			</section>
-
-			<section id="two" class="main style2">
-				<div class="container">
-					<div class="row gtr-150">
-						<div class="col-6 col-12-medium">
-							<ul class="major-icons">
-								<li style="text-align: centre"><span class="icon style1 major fa-cog"></span></li>
-							</ul>
-							<h2 style="text-align: centre"><b><u>POWERED BY:</u></b></h2>
-							<p><font size ="5">Find Github and Support server links below.</font></p>
-							<p></p>
-							<p><font size ="5">This site was created and is hosted by ActuallyJacob.</font></p>
-							<p></p>
-							<p><font size ="5">All dependencies are used under the MIT fair use agreement, and no credit has been taken where not due.</font></p>
-							<a href="https://discordapp.com/api/oauth2/authorize?client_id=527589264083386368&permissions=8&scope=bot" class="button fit">Invite</a>
-							<span class="image fit"></span><img src= "images/discord-js-2.png" alt="" width="325" /></span>
-							<span class="image fit"></span><img src= "images/klasa-js.png" alt="" width="325" /></span>
-							<span class="image fit"></span><img src= "images/mongodb.png" alt="" width="325" /></span>
-							<span class="image fit"></span><img src= "images/Node-js.png" alt="" width="325" /></span>
-							</div>
-						</div>
-				</section>
-
-		<!-- Footer -->
-			<section id="footer">
-				<ul class="icons">
-					<li><a href=https://github.com/ActuallyJacob/TheReaper-2019 class="icon alt fa-github fa-2x"><span class="label">GitHub</span></a></li>
-					<li><a href=https://discord.gg/QuqtdsJ class="fab fa-discord fa-3x"><span class="label"></span></a></li>
-				</ul>
-			</section>
-
-		<!-- Scripts -->
-			<script src="assets/js/jquery.min.js"></script>
-			<script src="assets/js/jquery.scrolly.min.js"></script>
-			<script src="assets/js/browser.min.js"></script>
-			<script src="assets/js/breakpoints.min.js"></script>
-			<script src="assets/js/util.js"></script>
-			<script src="assets/js/main.js"></script>
-
+		</div>
 	</body>
 </html>
